@@ -93,7 +93,6 @@ def getAcctNameNumber():
     result, accountNumber = getAcctNumber()
 
     if False == result:
-        print messages.getMessage("invalidCustom",["account number", accountNumber])
         return False, None, None
 
     accountName = raw_input(messages.getMessage("pleaseEnter","account name") + "> ")
